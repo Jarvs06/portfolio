@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: replace with your live URL
+Sitemap: https://jarvs06.github.io/portfolio/sitemap.xml

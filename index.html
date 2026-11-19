@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO — update the URL placeholders before publishing (see README) -->
+    <title>Jarvey Ilano — Web Developer & WordPress Developer</title>
+    <meta name="description" content="Jarvey Ilano is a web developer in the Philippines who builds and maintains WordPress sites, custom PHP and React applications, and the hosting infrastructure behind them." />
+    <meta name="author" content="Jarvey Ilano" />
+    <link rel="canonical" href="https://jarvs06.github.io/portfolio/" />
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111113" media="(prefers-color-scheme: dark)" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jarvey Ilano — Web Developer & Technical Problem Solver" />
+    <meta property="og:description" content="WordPress development, custom web applications, and website infrastructure." />
+    <meta property="og:url" content="https://jarvs06.github.io/portfolio/" />
+    <meta property="og:image" content="https://jarvs06.github.io/portfolio/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Jarvey Ilano — Web Developer & Technical Problem Solver" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jarvey Ilano — Web Developer & Technical Problem Solver" />
+    <meta name="twitter:description" content="WordPress development, custom web applications, and website infrastructure." />
+    <meta name="twitter:image" content="https://jarvs06.github.io/portfolio/og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <!-- Apply the saved/system theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:24px;font-family:system-ui,sans-serif">This site needs JavaScript enabled to display.</p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

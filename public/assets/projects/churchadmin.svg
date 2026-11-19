@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="ChurchAdmin placeholder">
+  <rect width="1200" height="750" fill="#F4F4F5"/>
+  <rect x="80" y="70" width="1040" height="680" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="80" y="70" width="1040" height="48" rx="14" fill="#FAFAFA"/>
+  <rect x="80" y="104" width="1040" height="14" fill="#FAFAFA"/>
+  <line x1="80" y1="118" x2="1120" y2="118" stroke="#E4E4E7" stroke-width="2"/>
+  <circle cx="110" cy="94" r="6" fill="#E4E4E7"/><circle cx="130" cy="94" r="6" fill="#E4E4E7"/><circle cx="150" cy="94" r="6" fill="#E4E4E7"/>
+  <rect x="420" y="84" width="360" height="20" rx="10" fill="#F4F4F5"/>
+  <text x="120" y="176" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#18181B">ChurchAdmin</text>
+  <rect x="900" y="150" width="180" height="40" rx="8" fill="#2563EB"/>
+  <rect x="120" y="214" width="320" height="40" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="120" y="276" width="960" height="44" fill="#FAFAFA"/>
+  <rect x="144" y="292" width="90" height="12" rx="6" fill="#A1A1AA"/>
+  <rect x="384" y="292" width="90" height="12" rx="6" fill="#A1A1AA"/>
+  <rect x="624" y="292" width="90" height="12" rx="6" fill="#A1A1AA"/>
+  <rect x="864" y="292" width="90" height="12" rx="6" fill="#A1A1AA"/>
+  <circle cx="160" cy="346" r="14" fill="#E4E4E7"/>
+  <rect x="190" y="340" width="120" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="384" y="340" width="91" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="624" y="340" width="62" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="864" y="340" width="93" height="12" rx="6" fill="#E4E4E7"/>
+  <line x1="120" y1="368" x2="1080" y2="368" stroke="#F4F4F5" stroke-width="2"/>
+  <circle cx="160" cy="390" r="14" fill="#E4E4E7"/>
+  <rect x="190" y="384" width="103" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="384" y="384" width="74" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="624" y="384" width="105" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="864" y="384" width="76" height="12" rx="6" fill="#E4E4E7"/>
+  <line x1="120" y1="412" x2="1080" y2="412" stroke="#F4F4F5" stroke-width="2"/>
+  <circle cx="160" cy="434" r="14" fill="#E4E4E7"/>
+  <rect x="190" y="428" width="86" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="384" y="428" width="117" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="624" y="428" width="88" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="864" y="428" width="119" height="12" rx="6" fill="#E4E4E7"/>
+  <line x1="120" y1="456" x2="1080" y2="456" stroke="#F4F4F5" stroke-width="2"/>
+  <circle cx="160" cy="478" r="14" fill="#E4E4E7"/>
+  <rect x="190" y="472" width="69" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="384" y="472" width="100" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="624" y="472" width="71" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="864" y="472" width="102" height="12" rx="6" fill="#E4E4E7"/>
+  <line x1="120" y1="500" x2="1080" y2="500" stroke="#F4F4F5" stroke-width="2"/>
+  <circle cx="160" cy="522" r="14" fill="#E4E4E7"/>
+  <rect x="190" y="516" width="112" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="384" y="516" width="83" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="624" y="516" width="114" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="864" y="516" width="85" height="12" rx="6" fill="#E4E4E7"/>
+  <line x1="120" y1="544" x2="1080" y2="544" stroke="#F4F4F5" stroke-width="2"/>
+  <circle cx="160" cy="566" r="14" fill="#E4E4E7"/>
+  <rect x="190" y="560" width="95" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="384" y="560" width="66" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="624" y="560" width="97" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="864" y="560" width="68" height="12" rx="6" fill="#E4E4E7"/>
+  <line x1="120" y1="588" x2="1080" y2="588" stroke="#F4F4F5" stroke-width="2"/>
+  <circle cx="160" cy="610" r="14" fill="#E4E4E7"/>
+  <rect x="190" y="604" width="78" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="384" y="604" width="109" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="624" y="604" width="80" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="864" y="604" width="111" height="12" rx="6" fill="#E4E4E7"/>
+  <line x1="120" y1="632" x2="1080" y2="632" stroke="#F4F4F5" stroke-width="2"/>
+  <circle cx="160" cy="654" r="14" fill="#E4E4E7"/>
+  <rect x="190" y="648" width="61" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="384" y="648" width="92" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="624" y="648" width="63" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="864" y="648" width="94" height="12" rx="6" fill="#E4E4E7"/>
+  <line x1="120" y1="676" x2="1080" y2="676" stroke="#F4F4F5" stroke-width="2"/>
+
+  <text x="600" y="728" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#A1A1AA">Placeholder — replace with a screenshot of ChurchAdmin</text>
+</svg>

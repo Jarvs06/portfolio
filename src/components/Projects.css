@@ -1,0 +1,199 @@
+.projects {
+  display: grid;
+  gap: var(--sp-5);
+}
+
+@media (min-width: 640px) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* The first project gets the full width as the lead piece */
+  .projects > .project:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 900px) {
+  .projects > .project:first-child {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  }
+
+  .projects > .project:first-child .project__media {
+    aspect-ratio: auto;
+    min-height: 340px;
+    border-bottom: 0;
+    border-right: 1px solid var(--border);
+  }
+
+  .projects > .project:first-child .project__body {
+    justify-content: center;
+    padding: var(--sp-6);
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  overflow: hidden;
+  transition: border-color var(--dur) var(--ease), opacity 600ms var(--ease), transform 600ms var(--ease);
+}
+
+.project:hover {
+  border-color: var(--border-strong);
+}
+
+/* Masonry stagger: the right column sits lower and drifts against the left
+   as you scroll (two-column layout only). */
+@media (min-width: 640px) {
+  .projects {
+    padding-bottom: 48px;
+  }
+
+  .project[data-parallax].is-visible {
+    transform: translate3d(0, calc(40px + var(--lift-y, 0px)), 0);
+  }
+}
+
+.project:hover .project__title {
+  color: var(--text);
+}
+
+.project__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  /* screenshot sits on a faint grid, echoing the hero */
+  background-color: var(--bg-subtle);
+  background-image: linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 28px 28px;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  padding: var(--sp-6) 0 0 var(--sp-6);
+}
+
+/* Soft accent wash in the corner — the only tint on the card */
+.project__media::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(70% 90% at 0% 0%, var(--accent-soft), transparent 70%);
+  pointer-events: none;
+}
+
+.project__shot {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: var(--radius) 0 0 0;
+  background: var(--bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 12px 32px -12px rgba(0, 0, 0, 0.12);
+  transition: transform 500ms var(--ease);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .project:hover .project__shot {
+    transform: translate3d(-4px, -4px, 0);
+  }
+}
+
+.project__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  transform-origin: top left;
+}
+
+.project__title-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  transition: color var(--dur) var(--ease);
+}
+
+.project__title-link:hover {
+  color: var(--accent);
+}
+
+.project__title-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--text-muted);
+  transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.project__title-link:hover .project__title-icon {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .project:hover .project__img {
+    --zoom: 1.14;
+  }
+}
+
+.project__placeholder {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.project__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--sp-5);
+}
+
+.project__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+.project__status {
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.project__title {
+  margin-top: var(--sp-2);
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.project__desc {
+  margin-top: var(--sp-2);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+
+.project__tags {
+  margin-top: var(--sp-4);
+}
+
+.project__links {
+  margin-top: auto;
+  padding-top: var(--sp-5);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}

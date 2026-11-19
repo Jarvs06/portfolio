@@ -1,0 +1,86 @@
+/* Design tokens. Change colors here and both themes follow. */
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f7f7f7;
+  --text: #171717;
+  --text-muted: #737373;
+  --border: #eaeaea;
+  --border-strong: #d4d4d4;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-contrast: #ffffff;
+  --accent-soft: #eff4ff;
+  --success: #16a34a;
+  --header-bg: rgba(255, 255, 255, 0.86);
+
+  /* Inverted panel (contact) */
+  --panel-bg: #171717;
+  --panel-text: #fafafa;
+  --panel-muted: #a3a3a3;
+  --panel-border: #2e2e2e;
+  --panel-grid: rgba(255, 255, 255, 0.06);
+
+  --font-sans: 'Geist Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Type scale (fluid where it matters) */
+  --fs-xs: 0.8125rem;   /* 13 */
+  --fs-sm: 0.875rem;    /* 14 */
+  --fs-base: 1rem;      /* 16 */
+  --fs-md: 1.125rem;    /* 18 */
+  --fs-lg: 1.25rem;     /* 20 */
+  --fs-xl: clamp(1.5rem, 1.2rem + 1vw, 1.875rem);
+  --fs-hero: clamp(2.75rem, 1.6rem + 5.2vw, 5.25rem);
+
+  /* Spacing — 4px base */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+  --sp-10: 128px;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-pill: 999px;
+
+  --container: 1100px;
+  --gutter: 20px;
+  --header-h: 64px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 180ms;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #111113;
+  --bg-subtle: #18181b;
+  --text: #ededed;
+  --text-muted: #a1a1a1;
+  --border: #27272a;
+  --border-strong: #3f3f46;
+  --accent: #5b8def;
+  --accent-hover: #7aa3f3;
+  --accent-contrast: #0b1220;
+  --accent-soft: #172036;
+  --success: #4ade80;
+  --header-bg: rgba(17, 17, 19, 0.86);
+
+  --panel-bg: #1a1a1e;
+  --panel-text: #fafafa;
+  --panel-muted: #a1a1aa;
+  --panel-border: #2e2e33;
+  --panel-grid: rgba(255, 255, 255, 0.05);
+  color-scheme: dark;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 32px;
+  }
+}

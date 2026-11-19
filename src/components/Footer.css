@@ -1,0 +1,88 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding-top: var(--sp-6);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+}
+
+.footer__icon,
+.footer__top {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  min-height: 40px;
+  min-width: 40px;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: color var(--dur) var(--ease);
+}
+
+.footer__top {
+  padding: 0 var(--sp-3);
+  margin-left: var(--sp-2);
+}
+
+.footer__icon:hover,
+.footer__top:hover {
+  color: var(--text);
+}
+
+.footer__tagline {
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.footer__wordmark-wrap {
+  margin-top: var(--sp-6);
+  overflow: hidden;
+  /* only the top part of the letters shows, like it's rising out of the page */
+  height: min(11.5vw, 140px);
+}
+
+.footer__wordmark {
+  font-size: min(15vw, 184px);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--border-strong);
+  margin-left: -0.04em;
+}
+
+/* Rises out of the page edge when the footer scrolls into view.
+   The wrapper is what useReveal() watches; it stays put, the name moves. */
+.footer__wordmark-wrap.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.footer__wordmark {
+  transform: translateY(70%);
+  transition: transform 1100ms var(--ease);
+}
+
+.footer__wordmark-wrap.is-visible .footer__wordmark {
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__wordmark {
+    transform: none;
+  }
+}

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="EveryWallet placeholder">
+  <rect width="1200" height="750" fill="#F4F4F5"/>
+  <rect x="80" y="70" width="1040" height="680" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="80" y="70" width="1040" height="48" rx="14" fill="#FAFAFA"/>
+  <rect x="80" y="104" width="1040" height="14" fill="#FAFAFA"/>
+  <line x1="80" y1="118" x2="1120" y2="118" stroke="#E4E4E7" stroke-width="2"/>
+  <circle cx="110" cy="94" r="6" fill="#E4E4E7"/><circle cx="130" cy="94" r="6" fill="#E4E4E7"/><circle cx="150" cy="94" r="6" fill="#E4E4E7"/>
+  <rect x="420" y="84" width="360" height="20" rx="10" fill="#F4F4F5"/>
+  <rect x="330" y="150" width="250" height="520" rx="30" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="3"/>
+  <rect x="425" y="164" width="60" height="8" rx="4" fill="#E4E4E7"/>
+  <text x="354" y="214" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#18181B">EveryWallet</text>
+  <rect x="354" y="236" width="202" height="110" rx="14" fill="#2563EB"/>
+  <rect x="374" y="262" width="80" height="10" rx="5" fill="#93B4F8"/>
+  <rect x="374" y="290" width="130" height="26" rx="6" fill="#FFFFFF"/>
+  <circle cx="374" cy="386" r="14" fill="#F4F4F5"/>
+  <rect x="400" y="380" width="90" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="506" y="380" width="40" height="12" rx="6" fill="#D4D4D8"/>
+  <circle cx="374" cy="442" r="14" fill="#F4F4F5"/>
+  <rect x="400" y="436" width="90" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="506" y="436" width="40" height="12" rx="6" fill="#D4D4D8"/>
+  <circle cx="374" cy="498" r="14" fill="#F4F4F5"/>
+  <rect x="400" y="492" width="90" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="506" y="492" width="40" height="12" rx="6" fill="#D4D4D8"/>
+  <circle cx="374" cy="554" r="14" fill="#F4F4F5"/>
+  <rect x="400" y="548" width="90" height="12" rx="6" fill="#E4E4E7"/>
+  <rect x="506" y="548" width="40" height="12" rx="6" fill="#D4D4D8"/>
+  <rect x="640" y="150" width="250" height="520" rx="30" fill="#FFFFFF" stroke="#D4D4D8" stroke-width="3"/>
+  <rect x="735" y="164" width="60" height="8" rx="4" fill="#E4E4E7"/>
+  <rect x="664" y="210" width="202" height="54" rx="10" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="680" y="230" width="110" height="12" rx="6" fill="#D4D4D8"/>
+  <rect x="664" y="280" width="202" height="54" rx="10" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="680" y="300" width="87" height="12" rx="6" fill="#D4D4D8"/>
+  <rect x="664" y="350" width="202" height="54" rx="10" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="680" y="370" width="64" height="12" rx="6" fill="#D4D4D8"/>
+  <rect x="664" y="420" width="202" height="54" rx="10" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="680" y="440" width="91" height="12" rx="6" fill="#D4D4D8"/>
+  <rect x="664" y="490" width="202" height="54" rx="10" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="680" y="510" width="68" height="12" rx="6" fill="#D4D4D8"/>
+  <rect x="664" y="560" width="202" height="54" rx="10" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="680" y="580" width="95" height="12" rx="6" fill="#D4D4D8"/>
+
+  <text x="600" y="728" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#A1A1AA">Placeholder — replace with a screenshot of EveryWallet</text>
+</svg>

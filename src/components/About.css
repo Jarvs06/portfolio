@@ -1,0 +1,84 @@
+.about__text {
+  display: grid;
+  gap: var(--sp-4);
+  max-width: 64ch;
+  font-size: var(--fs-md);
+  line-height: 1.7;
+}
+
+.about__text p + p {
+  color: var(--text-muted);
+}
+
+/* ---------- Photo strip ---------- */
+.about__photos {
+  margin-top: var(--sp-7);
+}
+
+.about__focus {
+  margin-top: var(--sp-7);
+  display: grid;
+  gap: var(--sp-3);
+}
+
+.about__item {
+  position: relative;
+  padding: var(--sp-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  overflow: hidden;
+  transition: border-color var(--dur) var(--ease), transform 300ms var(--ease);
+}
+
+/* Accent line that draws across the top on hover */
+.about__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms var(--ease);
+}
+
+.about__item:hover {
+  border-color: var(--border-strong);
+}
+
+.about__item:hover::before {
+  transform: scaleX(1);
+}
+
+.about__icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent);
+  margin-bottom: var(--sp-4);
+}
+
+.about__item-title {
+  font-size: var(--fs-base);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.about__item-text {
+  margin-top: var(--sp-1);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.55;
+}
+
+@media (min-width: 640px) {
+  .about__focus {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

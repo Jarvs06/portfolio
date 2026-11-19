@@ -1,0 +1,153 @@
+.timeline-wrap {
+  position: relative;
+}
+
+/* Accent line that fills the rail as you scroll through the section */
+.timeline__fill {
+  position: absolute;
+  z-index: 1;
+  left: 4px;
+  top: 14px;
+  bottom: 0;
+  width: 1px;
+  background: var(--accent);
+  transform-origin: top;
+  transform: scaleY(var(--parallax-progress, 0));
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 120px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 120px), transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline__fill {
+    display: none;
+  }
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline__item {
+  position: relative;
+  display: grid;
+  gap: var(--sp-2);
+  padding-left: var(--sp-6);
+  padding-bottom: var(--sp-7);
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+/* Rail */
+.timeline__item::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 14px;
+  bottom: -6px;
+  width: 1px;
+  background: var(--border);
+}
+
+/* The rail continues past the last role and fades out */
+.timeline__item:last-child::before {
+  bottom: 0;
+  background: linear-gradient(to bottom, var(--border), transparent);
+}
+
+/* Node */
+.timeline__item::after {
+  z-index: 2;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1.5px solid var(--border-strong);
+}
+
+.timeline__item:first-child::after {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.timeline__when {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--sp-3);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.timeline__where::before {
+  content: '/';
+  margin-right: var(--sp-3);
+  color: var(--border-strong);
+}
+
+.timeline__role {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.timeline__company {
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.timeline__summary {
+  margin-top: var(--sp-3);
+  max-width: 62ch;
+}
+
+.timeline__list {
+  margin-top: var(--sp-3);
+  display: grid;
+  gap: var(--sp-2);
+  max-width: 62ch;
+  color: var(--text-muted);
+}
+
+.timeline__list li {
+  position: relative;
+  padding-left: var(--sp-4);
+}
+
+.timeline__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.75em;
+  width: 6px;
+  height: 1px;
+  background: var(--text-muted);
+}
+
+.timeline__tags {
+  margin-top: var(--sp-4);
+}
+
+@media (min-width: 720px) {
+  .timeline__item {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: var(--sp-6);
+  }
+
+  .timeline__when {
+    flex-direction: column;
+    padding-top: 2px;
+  }
+
+  .timeline__where::before {
+    display: none;
+  }
+}
